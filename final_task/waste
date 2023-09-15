@@ -1,0 +1,64 @@
+<div  class="formCol">
+                                <!-- id -->
+                                <div>
+                                    <label for="empId" class="fieldsLabel">Id</label><br>
+                                    <input type="number" id="empId" name="empId">
+                                    <br>
+                                </div>
+
+                                <!-- age -->
+                                <div>
+                                    <label for="age" class="fieldsLabel">Age</label><br>
+                                    <input type="number" id="age" name="age">
+                                    <br>
+                                </div>
+
+                                <!-- Image -->
+                                <div>
+                                    <label for="image" class="fieldsLabel">Choose a profile picture:</label><br>
+                                    <input type="file" id="image" name="image" accept="image/png, image/jpeg">
+                                    <br>
+                                </div>
+
+                                <!-- designation -->
+                                <div>
+                                    <label for="designation" class="fieldsLabel">Designation</label><br>
+                                    <select name="designation" id="designation" placeholder="select">
+                                        <option value="" selected>Select</option>
+                                        <option value="Manager" >Manager</option>
+                                        <option value="Tester" >Tester</option>
+                                        <option value="Desiner">Desiner</option>
+                                        <option value="Developer" >Developer</option>
+                                        <option value="Architect">Architect</option>
+                                    </select>
+                                    <br>
+                                </div>
+                                
+                                
+                            </div>
+                            <div class="formCol">
+                                <!-- Name -->
+                                <div>
+                                    <label for="name" class="fieldsLabel">Name</label><br>
+                                    <input type="text" id="name" name="name">
+                                    <br>
+                                </div>
+
+                                <!-- emailId -->
+                                <div>
+                                    <label for="email" class="fieldsLabel">EmailId</label><br>
+                                    <input type="email" id="email" name="email">
+                                    <br>
+                                </div>
+                                <!-- Gender -->
+                                <div>
+                                    <label for="gender" class="fieldsLabel">Gender</label><br>
+                                    <input type="radio" id="male" name="gender" value="male" checked>
+                                    <label for="male">Male</label><br>
+                                    <input type="radio" id="female" name="gender" value="female">
+                                    <label for="female">Female</label><br>  
+                                    <input type="radio" id="other" name="gender" value="other">
+                                    <label for="other">Other</label><br>
+                                </div>
+
+                            </div>

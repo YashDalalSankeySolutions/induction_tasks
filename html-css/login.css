@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin:0px;
+    padding:0px;
+    font-family: 'Roboto';
+}
+#container{
+    width:100%;
+    height:100%;
+    display: flex;
+    
+}
+#imageContainer{
+    width:50%;
+    height:100vh;
+}
+#image{
+    width:100%;
+    height:100%;
+}
+#loginFormContainer{
+    width:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: grey; */
+}
+#loginFormInnerContainer{
+    width:55%;
+    height:80vh;
+    /* background-color: red; */
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+#loginForm{
+    /* border:2px solid black; */
+    background-color: #fff;
+    
+    /* min-width:400px; */
+}
+#loginWelcome{
+    font-size: 16px;
+    color:#2D3748;
+}
+#loginHeading{
+    color:#1A202C;
+    font-size:30px;
+    font-weight: 700;
+}
+#formContainer{
+    display: flex;
+    flex-direction: column;
+    margin:15px 0;
+}
+#formContainer>label{
+    font-size: 16px;
+    color:#4A5568;
+    font-weight: 400;
+    margin:5px 0;
+}
+#formContainer>input{
+    width:100%;
+    padding:12px 20px;
+    margin:5px 0;
+    display: inline-block;
+    border: 1px solid #E8E8E8;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size:14px;
+}
+#infoContainer{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:15px 0;
+}
+#infoRemember{
+    display:flex;
+    align-items: center;
+}
+#infoRemember>span{
+    margin-left:5px;
+    font-size:14px;
+    color:#2D3748;
+}
+#forgetPassword{
+    text-decoration: none;
+    color:#2C5282;
+    font-size:14px;
+    font-weight: 400;
+}
+#infoRememberCheckBox{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    -webkit-appearance: none;
+    cursor: pointer;
+}
+#infoRememberCheckBox:checked {
+    padding:5px;
+    background-color: rgba(76, 132, 236, 0#808);
+}
+#loginButtonContainer>button{
+    width:100%;
+    background-color:#04C35C;
+    border:none;
+    padding:15px;
+    border-radius: 5px;
+    color:#fff;
+    font-size:16px;
+    font-weight: 500;
+}
+#signInWithGoogleButtonContainer>button{
+    width:100%;
+    background-color:#2D3748;
+    border:none;
+    padding:15px;
+    margin-top:15px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size:16px;
+    font-weight:500;
+}
+#signInWithGoogleButtonContainer>button>div{
+    margin:5px;
+}
+#createAccountContainer{
+    display:flex;
+    justify-content: center;
+}
+#createAccount{
+    font-size:16px;
+    color:#616161;
+}
+#joinFree{
+    text-decoration: none;
+    font-size:16px;
+    color:#2B6CB0;
+    padding-left: 5px;
+}
+#emailError{
+    color: red;
+    font-size: 12px;
+    text-align: center
+}
+#loginError{
+    color:red;
+    font-size: 12px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+@media screen and (max-width: 1060px){
+    #loginHeading{
+        font-size: 25px;
+    }
+    #infoRemember>span{
+        font-size: 12px;
+    }
+    #forgetPassword{
+        font-size:12px;
+    }
+    #createAccount{
+        font-size:12px;
+    }
+    #joinFree{
+        font-size: 12px;
+    }
+
+}
+@media screen and (max-width:890px){
+    #loginHeading{
+        font-size: 20px;
+    }
+    #loginButtonContainer>button{
+        padding:10px;
+        font-size: 14px;
+    }
+    #signInWithGoogleButtonContainer>button{
+        padding:10px;
+        font-size: 14px;
+    }
+}
+@media screen and ((max-width:790px) or (max-device-width:790px)){
+    #container{
+        display: flex;
+        flex-direction: column;
+        /* background-color: yellow; */
+    }
+    #imageContainer{
+        width:100%;
+    }
+    #loginFormContainer{
+        width:100%;
+        /* background-color: #fff; */
+    }
+    #loginFormInnerContainer{
+        width:90%;
+        height:100vh;
+        padding-top: 50px;
+    }
+    #loginHeading{
+        font-size: 30px;
+    }
+    #infoRemember>span{
+        font-size: 14px;
+    }
+    #forgetPassword{
+        font-size:14px;
+    }
+    #createAccount{
+        font-size:16px;
+    }
+    #joinFree{
+        font-size: 16px;
+    }
+    
+}

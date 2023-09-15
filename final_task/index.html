@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Employee Portal</title>
+        
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+    </head>
+    <body>
+
+        <div>
+            <!-- navbar -->
+            <div id="navbar">
+                <div id="siteName">Employee Portal</div>
+                <!-- <div id="navigator">
+                    <a href="#card" >Form</a>
+                    <a href="#tableContainer" >Table</a>
+                </div> -->
+            </div>
+
+            <div id="container">
+                
+                <!-- form -->
+                <div id="card">
+                    <div id="heading">Add Employee Details</div>
+                        <div id="form">
+                            
+                            <div class="formRow">
+                                 <!-- id -->
+                                 <div>
+                                    <label for="empId" class="fieldsLabel">Id</label><br>
+                                    <input type="number" id="empId" name="empId" class="fieldsInput" placeholder="Enter Id">
+                                    <p id="idError" class="error"></p>
+                                </div>
+                                <!-- Name -->
+                                <div>
+                                    <label for="name" class="fieldsLabel">Name</label><br>
+                                    <input type="text" id="name" name="name" class="fieldsInput"  placeholder="Enter Name">
+                                    <p id="nameError" class="error"></p>
+                                </div>
+                            </div>
+                            <div class="formRow">
+                                <!-- age -->
+                                <div>
+                                    <label for="age" class="fieldsLabel" >Age</label><br>
+                                    <input type="number" id="age" name="age" class="fieldsInput" placeholder="Enter Age">
+                                    <p id="ageError" class="error"></p>
+                                </div>
+                                <!-- emailId -->
+                                <div>
+                                    <label for="email" class="fieldsLabel" >EmailId</label><br>
+                                    <input type="email" id="email" name="email" class="fieldsInput" placeholder="Enter Email Id">
+                                    <p id="emailError" class="error"></p>
+                                </div>
+                            </div>
+                            <div class="formRow">
+                                <div>
+                                    <!-- Image -->
+                                    <div>
+                                        <label for="image" class="fieldsLabel">Profile Image Url</label><br>
+                                        <input type="url" id="image" class="fieldsInput" name="image" placeholder="Enter Image Url">
+                                        <p id="imageError" class="error"></p>
+                                    </div>
+                                    
+                                </div>
+                                <div>
+                                    <!-- Gender -->
+                                    <div id="genderContainer">
+                                        <div>
+                                            <label for="gender" class="fieldsLabel" id="gender">Gender</label>
+                                        </div>
+                                        <div>
+                                            <input type="radio" id="male" name="gender" value="male" checked>
+                                            <label for="male" class="radioLabel">Male</label><br>
+                                            <input type="radio" id="female" name="gender" value="female">
+                                            <label for="female">Female</label><br>  
+                                            <input type="radio" id="other" name="gender" value="other">
+                                            <label for="other">Other</label><br>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="formRow">
+                                <!-- designation -->
+                                <div>
+                                    <label for="designation" class="fieldsLabel">Designation</label><br>
+                                    <select name="designation" class="fieldsInput" id="designation"   placeholder="select">
+                                        <option value="" selected>Select</option>
+                                        <option value="Manager" >Manager</option>
+                                        <option value="Tester" >Tester</option>
+                                        <option value="Desiner">Desiner</option>
+                                        <option value="Developer" >Developer</option>
+                                        <option value="Architect">Architect</option>
+                                    </select>
+                                    <p id="designationError" class="error"></p>
+                                </div>
+                                <div id="formbtnContainer">
+                                    <button type="submit" onClick="addData()" id="addbtn" class="formbtn">Submit</button>
+                                    <button onClick="clearData()" id="clearbtn" class="formbtn">Clear</button>
+                                </div> 
+                            </div>
+                        </div>
+                        <!-- #04C35C -->
+                    
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div id="tableContainer">
+                    <table id="table"></table> 
+                <div>
+
+            </div>
+ 
+        </div>
+
+        
+
+        <!-- Modal -->
+
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div id="modalContent">
+                
+            </div>
+        
+        </div>
+
+
+        
+        <script type="text/javascript" src="index.js" ></script>
+    </body>
+</html>
